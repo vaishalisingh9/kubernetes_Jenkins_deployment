@@ -28,7 +28,6 @@ pipeline {
       steps{
         script {
           dockerImage = docker.build dockerimagename
-          sh 'export PATH=$PATH:/usr/bin/docker'
         }
       }
     }
